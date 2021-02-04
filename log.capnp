@@ -399,6 +399,8 @@ struct HealthData {
     pedal @4;
     uno @5;
     dos @6;
+    ctrls @7;
+    ibst @8;
   }
 
   enum UsbPowerMode {
