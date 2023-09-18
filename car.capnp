@@ -9,6 +9,7 @@ $Java.outerClassname("Car");
 
 # ******* events causing controls state machine transition *******
 
+
 struct CarEvent @0x9b1657f34caf3ad3 {
   name @0 :EventName;
 
@@ -129,6 +130,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
 
 # ******* main car state @ 100hz *******
 # all speeds in m/s
+
+
 
 struct CarState {
   events @13 :List(CarEvent);
