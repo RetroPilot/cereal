@@ -357,6 +357,11 @@ struct CarParams {
   fuzzyFingerprint @55 :Bool;
 
   enableGasInterceptor @2 :Bool;
+  enableGasActuator @57 :Bool;
+  enableSteerInterceptor @58 :Bool;
+  enableSteerActuator @59 :Bool;
+  enableiBooster @60 :Bool;
+
   enableCruise @3 :Bool;
   enableCamera @4 :Bool;
   enableDsu @5 :Bool; # driving support unit
