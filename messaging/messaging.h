@@ -5,6 +5,7 @@
 #include <vector>
 #include <capnp/serialize.h>
 #include "../gen/cpp/log.capnp.h"
+#include <time.h>
 
 #ifdef __APPLE__
 #define CLOCK_BOOTTIME CLOCK_MONOTONIC
