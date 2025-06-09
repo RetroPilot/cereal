@@ -286,6 +286,7 @@ struct CarControl {
   active @7 :Bool;
 
   actuators @6 :Actuators;
+  bodycontrol @8 :BodyControl;
 
   cruiseControl @4 :CruiseControl;
   hudControl @5 :HUDControl;
@@ -297,6 +298,11 @@ struct CarControl {
     # range from -1.0 - 1.0
     steer @2: Float32;
     steeringAngleDeg @3: Float32;
+  }
+
+  struct BodyControl {
+    # raw binary control for 8 relays
+    relayCoreCMD @0: UInt8;
   }
 
   struct CruiseControl {
