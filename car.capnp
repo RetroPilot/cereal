@@ -293,6 +293,7 @@ struct CarControl {
 
   # Actuator commands as computed by controlsd
   actuators @6 :Actuators;
+  bodycontrol @11 :BodyControl;
 
   # Any car specific rate limits or quirks applied by
   # the CarController are reflected in actuatorsOutput
@@ -325,6 +326,11 @@ struct CarControl {
       startingDEPRECATED @3;
     }
 
+  }
+
+  struct BodyControl {
+    # raw binary control for 8 relays
+    relayCoreCMD @0: UInt8;
   }
 
   struct CruiseControl {
